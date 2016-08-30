@@ -1,11 +1,11 @@
 * {
   font-family: Helvetica;
+  box-sizing: border-box;
 }
 
 body {
   margin:0;
   text-align: center;
-  min-width: 957px;
 }
 
 a {
@@ -16,6 +16,7 @@ a {
   opacity: 1;
   transition: opacity 0.1s ease-in-out;
 }
+
 a:hover {
   opacity:0.5;
 }
@@ -37,9 +38,11 @@ li  {
   background-position: center;
   background-repeat: no-repeat;
   background-size: cover;
+  background-position: 50%;
   width:100%;
   height:720px;
   box-shadow: inset 0 0 50px black;
+  overflow: hidden;
 }
 
 #first  {
@@ -55,7 +58,6 @@ li  {
 }
 
 .box  {
-  position: static;
   display: inline-block;
   text-align:center;
   margin:250px 43%;
@@ -64,6 +66,7 @@ li  {
   padding:20px 35px;
   box-shadow: 0 0 50px black;
   font-size: 30px;
+  transition: margin linear 0.2s;
 }
 
 .full-module  {
@@ -96,8 +99,51 @@ li  {
 }
 
 .half-module  {
-  width:40%;
+  width:50%;
   height:200px;
   float:left;
   padding:50px 5%;
+}
+
+.alt-header {
+  color: white;
+  float: right;
+}
+
+/* Portrait and Landscape */
+
+@media (max-width: 1024px) {
+
+    .full-menu {
+      display: none;
+    }
+
+    .box  {
+      margin: 250px 20%;
+    }
+
+    .alt-header {
+      display: inline-block;
+      margin-right: 40px;
+    }
+
+    .half-module{
+      width:100%;
+      height: 300px;
+    }
+
+    .full-module  {
+      height:530px;
+    }
+
+    .welcome-text {
+      width: 100%;
+      padding: 0 5%;
+      margin: 0;
+    }
+
+    .welcome-pic  {
+      margin:20px auto;
+      float: none;
+    }
 }

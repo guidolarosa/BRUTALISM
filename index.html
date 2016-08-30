@@ -9,11 +9,14 @@
       <main>
       <div class="parallax" id="first">
         <div class="header">
-          <ul>
+          <ul class="full-menu">
             <li><a href="#">HOME</a></li>
             <li><a href="#">PICTURES</a></li>
             <li><a href="#">CONTACT</a></li>
             <li><a href="#">ABOUT</a></li>
+          </ul>
+          <ul class="alt-header">
+            <li><a href="#">MENU</a></li>
           </ul>
         </div>
         <div class="box">
@@ -65,4 +68,10 @@
     </footer>
 
   </body>
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js">
+     $(document).ready(function(){
+      $('.parallax').parallax();
+    });
+        </script>
+
 </html>
