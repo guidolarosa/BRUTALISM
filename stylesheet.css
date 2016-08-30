@@ -108,6 +108,7 @@ li  {
 .alt-header {
   color: white;
   float: right;
+  display: none;
 }
 
 /* Portrait and Landscape */
